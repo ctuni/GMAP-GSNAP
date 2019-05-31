@@ -1,0 +1,5 @@
+
+IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
+OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files0
+
+gmap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP --ordered --nthreads 12 --batch 5 -o FR --expand-offsets 1 -S $OUTDIR/1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq
