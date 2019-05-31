@@ -3,67 +3,67 @@
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files0
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gmap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP --ordered --nthreads 12 --batch 5 -o FR --expand-offsets 1 -S $OUTDIR/1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq
+gmap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP --ordered --nthreads 12 --batch 5 -o FR --expand-offsets 1 -S $OUTDIR/2 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq
+gmap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP --ordered --nthreads 12 --batch 5 -o FR --expand-offsets 1 -S $OUTDIR/3 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gmap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP --ordered --nthreads 12 --batch 5 -o FR --expand-offsets 1 -S $OUTDIR/4 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test1
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files1
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test2
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files2
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --indel-penalty 1 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test3
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files3
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --gmap-min-match-length 10 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test4
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files4
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairexpect 240 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test5
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files5
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
 
 #Test6
 
 IDXDIR=/samscratch/Test_Cris_mouse/TFG/RawData/SetA
 OUTDIR=/samscratch/Test_Cris_mouse/TFG/GSNAP/SetA/BAM_files6
 
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq $OUTDIR/SRR327045.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq $OUTDIR/SRR327047.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq $OUTDIR/SRR327057.sam
-gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq $OUTDIR/SRR327058.sam
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327045_1.fastq $IDXDIR/SRR327045_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327047_1.fastq $IDXDIR/SRR327047_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327057_1.fastq $IDXDIR/SRR327057_2.fastq 
+gsnap -D $IDXDIR -d Idx_Gencode17_mm10_readlength240GSNAP -A sam --max-mismatches 15 --indel-penalty 1 --gmap-min-match-length 10 --pairexpect 240 --pairdev 0 --merge-distant-samechr --ordered --novelsplicing 1 --nthreads 10 --batch 5 --expand-offsets 1 $IDXDIR/SRR327058_1.fastq $IDXDIR/SRR327058_2.fastq 
